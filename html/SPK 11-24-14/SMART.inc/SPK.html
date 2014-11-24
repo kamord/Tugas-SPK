@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#header {
+    background-color:#333333;
+    color:white;
+    text-align:center;
+    padding:5px;
+	font-family: calibri;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:800px;
+    width:350px;
+    float:left;
+    padding:5px;
+	font-family: calibri;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+	font-family: calibri;	
+}
+#footer {
+    background-color:#333333;
+    color:white;
+    clear:both;
+    text-align:center;
+	padding:5px;	
+	font-family: calibri;
+}
+</style>
+<style type="text/css">
+.show{display:block;}
+.hide{display:none;}
+</style>
+<script type="text/javascript">
+function showImg()
+{
+var obj=document.getElementById('Picture1');
+obj.className = 'show';
+}
+function myFunction() {
+	document.getElementById("name").innerHTML =
+	" Galaxy Note 3";
+    document.getElementById("spec").innerHTML =
+	" <b>Price:</b> Rp6.900.000 <br> <b>OS:</b> Android <br> <b>Brand:</b> Samsung <br> <b>Camera:</b> 8MP <br> <b>Display Size:</b> 5.7 <br> <b>Memory:</b> 32GB <br> <b>Water Resistance:</b> No <br> <b>Battery Capacity:</b> 3200mAh <br> <b>Color:</b> Black <br> <b>RAM:</b> 3GB"
+}
+</script>
+</head>
+
+<body>
+
+<div id="header">
+<h1>Decision Support System for Smartphone</h1>
+</div>
+
+<div id="nav">
+<table style="width:100%">
+
+  <tr>
+    <td>Price:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>< Rp1.000.000</option>
+		  <option>Rp1.000.001 - Rp3.000.000</option>
+		  <option>Rp3.000.001 - Rp5.000.000</option>
+		  <option>Rp5.000.001 - Rp7.000.000</option>
+		  <option>> Rp7.000.000</option>
+		</select>
+	</td>
+  </tr>
+  
+  <tr>
+    <td>OS:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>Android</option>
+		  <option>iOS</option>
+		  <option>Windows Phone</option>
+		  <option>Blackberry</option>
+		</select>
+	</td>		
+  </tr>
+  
+  <tr>
+    <td>Brand:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>Samsung</option>
+		  <option>Oppo</option>
+		  <option>Nokia</option>
+		  <option>Apple</option>
+		  <option>Asus</option>
+		  <option>Lenovo</option>
+		  <option>Blackberry</option>
+		</select>
+	</td>		
+  </tr>
+  
+  <tr>
+    <td>Camera:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>< 1MP</option>
+		  <option>1MP - 3MP</option>
+		  <option>3MP - 5MP</option>
+		  <option>5MP - 7MP</option>
+		  <option>> 7MP</option>
+		</select>
+	</td>		
+  </tr>
+  
+  <tr>
+    <td>Display Size::</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>< 4"</option>
+		  <option>4" - 5"</option>
+		  <option>5" - 6"</option>
+		  <option>>6"</option>
+		</select>
+	</td>		
+  </tr>
+  
+  <tr>
+    <td>Memory:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>< 1GB</option>
+		  <option>4GB - 8GB</option>
+		  <option>8GB - 16GB</option>
+		  <option>16GB - 32GB</option>
+		  <option>> 32GB</option>
+		</select>
+	</td>		
+  </tr>
+  
+  <tr>
+    <td>Water Resistance:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>Yes</option>
+		  <option>No</option>
+		  <option>-</option>
+		</select>
+	</td>		
+  </tr>
+  
+  <tr>
+    <td>Battery Capacity:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>< 1500 mAh</option>
+		  <option>1500 mAh - 2000 mAh</option>
+		  <option>2000 mAh - 2500 mAh</option>
+		  <option>2500 mAh - 3000 mAh</option>
+		  <option>> 3000 mAh</option>
+		</select>
+	</td>		
+  </tr>
+  
+	<tr>
+    <td>Color:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>Black</option>
+		  <option>White</option>
+		  <option>Blue</option>
+		  <option>Red</option>
+		  <option>Other</option>
+		</select>
+	</td>		
+	</tr>
+	
+	<tr>
+    <td>RAM:</td>
+    <td>
+		<select>
+		  <option> - </option>
+		  <option>< 256MB</option>
+		  <option>256MB - 512MB</option>
+		  <option>512MB - 1GB</option>
+		  <option>1GB - 2GB</option>
+		  <option>> 3GB</option>
+		</select>
+	</td>		
+	</tr>
+  
+</table>
+
+
+	<input type="button" onclick = "showImg(), myFunction()" value= "Show Result ">	
+</div>
+
+<div id="section">
+<h2><p id="name" align="left"></p></h2>
+<center>
+<img id="Picture1" src="note3.jpg" class="hide" width="300" height="265"> <br>
+<p id="spec" align="left"></p>
+
+</center>
+</div>
+
+<div id="footer">
+Copyright © SMART.inc
+</div>
+
+</body>
+</html>
